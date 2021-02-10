@@ -1,7 +1,7 @@
 const clarifai = require('clarifai');
 
 const app = new Clarifai.App({
-	apiKey:'b75a01ec52094fec882aa5d86caaf143'
+	apiKey:process.env.CLARIFAI_API_KEY
 });
 
 // If the model isnt working change it to that
