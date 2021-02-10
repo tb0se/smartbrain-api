@@ -42,6 +42,6 @@ app.put('/image', (req,res) =>{image.handleImage(req,res,db)})
 // CLARIFAI API
 app.post('/imageurl', (req,res) =>{image.handleAPICall(req,res)})
 
-app.listen(3001, ()=>{
-    console.log('App is running on port 3001');
+app.listen(process.env.PORT || 3001, ()=>{
+    console.log(`Server is running on port ${process.env.PORT} `);
 })
